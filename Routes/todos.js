@@ -1,5 +1,5 @@
 const express=require('express');
-const router=express.router();
+const router=express.Router();
 
 const {createTodo}=require('../Controllers/CreateTodo')
 
@@ -7,4 +7,4 @@ const {createTodo}=require('../Controllers/CreateTodo')
 
 router.post('/createTodo',createTodo);
 
-module.exports=router
+module.exports=router;
