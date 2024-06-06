@@ -28,5 +28,10 @@ const { updateTodo } = require('../Controllers/updateTodo');
 
 router.put('/updateTodo/:id',updateTodo)
 
+// Delete the TodoItems
+
+const { deleteTodo } = require('../Controllers/deleteTodo');
+
+router.delete("deleteTodo/:id",deleteTodo)
 
 module.exports=router;
