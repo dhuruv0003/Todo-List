@@ -4,14 +4,21 @@ const router=express.Router();
 
 //Function ko import larne ke liye destructuring karni padti hai
 
-const {createTodo}=require('../Controllers/CreateTodo');
+// Post Route
 
+const {createTodo}=require('../Controllers/CreateTodo');
 
 // define API Routes 
 router.post('/createTodo',createTodo);
 
-const { getTodo } = require('../Controllers/getTodo');
+//Get Toutes
+
+const { getTodo,getTodoById } = require('../Controllers/getTodo');
 
 router.get('/getTodos',getTodo)
+
+// Find data by id 
+
+router.get('/getTodos/:id',getTodoById)
 
 module.exports=router;
