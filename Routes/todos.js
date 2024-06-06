@@ -32,6 +32,6 @@ router.put('/updateTodo/:id',updateTodo)
 
 const { deleteTodo } = require('../Controllers/deleteTodo');
 
-router.delete("deleteTodo/:id",deleteTodo)
+router.delete("/deleteTodo/:id",deleteTodo)
 
 module.exports=router;
