@@ -13,7 +13,7 @@ app.use(express.json());
 
 const todoRoutes=require('./Routes/todos')
 
-// map the todo api todoRoutes. /api/v1 is a fixed api route which will come before every todosoutes 
+// map or appends the todo api todoRoutes. /api/v1 is a fixed api route which will come before every todoRoutes 
 
 app.use('/api/v1',todoRoutes)
 
