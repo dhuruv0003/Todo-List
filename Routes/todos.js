@@ -26,7 +26,7 @@ router.get('/getTodos/:id',getTodoById)
 
 const { updateTodo } = require('../Controllers/updateTodo');
 
-router.put('/updateTodo',updateTodo)
+router.put('/updateTodo/:id',updateTodo)
 
 
 module.exports=router;
